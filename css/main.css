@@ -1,0 +1,94 @@
+body{background: #ededed}
+header{position: fixed;width: 100%;height: 108px;background: url(../img/pixel.png);color: #fff;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;z-index: 2}
+header.sticky {height: 54px;text-align: left;}
+header.sticky a#logo img{height: 40px;}
+#menu {list-style: none;float: right;margin-top: 43px;}
+#menu li{float: left; margin-right: 15px}
+#menu li a{color: #fff;}
+#logo{float: left;margin-top: -0;}
+header.sticky #menu{margin-top: 13px;}
+header.sticky #menu li a{color: #000}
+a{text-decoration: none}
+#triggermenu{font-size: 25px;color: #999;display: none;margin-top: 8px;color: #ccc;position: absolute;right: 20px}
+.facebook{color:#3b5998 !important}
+.twitter{color:#4099ff !important}
+ul{list-style: none !important}
+#listaservicios{margin-top: 40px}
+#listaservicios img,h3,p{float: left;}
+#listaservicios img{height: 30px; margin-top: 10px; margin-right: 10px}
+#listaservicios p{width: 100%; margin-bottom: 5px}
+#listaservicios h3{margin-bottom: 5px}
+.parallax {min-height: 500px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+#p1{ background-image: url("../img/p1.jpg");}
+#p2{ background-image: url("../img/p2.jpg");}
+#p3{ background-image: url("../img/p3.jpg");}
+.tac{text-align: center; width: 100%}
+h2{margin-top: 20px}
+.centrar{margin: 0 auto; display: block;}
+.backgris{background: #242731; color: #fff}
+.mt20{margin-top: 20px}
+#menumovil{position: fixed; top: 54px; background: #242731;width: 100%; left: 0}
+#menumovil li{text-align: center;}
+#menumovil li a{color: #fff;}
+#menumovil{display: none}
+@media (min-width: 300px) {
+	.txtform{width: 100%; margin-right: 0}
+	#menu{display: none}
+	#triggermenu{display: block}
+	header{height: 54px; background: #242731; width: 100%}
+	header a#logo img {height: 40px;}
+	.parallax {min-height: 200px; background-attachment: scroll;}
+
+}
+/* Larger than mobile */
+@media (min-width: 400px) {
+	.txtform{width: 100%; margin-right: 0}
+	#menu{display: none}
+	#triggermenu{display: block}
+	header{height: 54px; background: #242731; width: 100%}
+	header a#logo img {height: 40px;}
+	.parallax {min-height: 200px; background-attachment: fixed}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	.metodo{font-size: 10px}
+	#menu{display: none}
+	#triggermenu{display: block}
+	header{height: 54px; background: #242731}
+	header a#logo img {height: 40px;}
+	.parallax {min-height: 200px; background-attachment: fixed}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.metodo{font-size: 12px}
+	#menu{display: block}
+	#triggermenu{display: none}
+	header{height: 108px;background: url(../img/pixel.png);}
+	header a#logo img {height: auto;}
+	.parallax {min-height: 300px; background-attachment: fixed}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	#menu{display: block}
+	#triggermenu{display: none}
+	header{height: 108px;background: url(../img/pixel.png);}
+	header a#logo img {height: auto;}
+	.parallax {min-height: 500px; background-attachment: fixed}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	#menu{display: block}
+	#triggermenu{display: none}
+	header{height: 108px;background: url(../img/pixel.png);}
+	header a#logo img {height: auto;}
+	.parallax {min-height: 500px; background-attachment: fixed}
+}
+
+
+
+
+
