@@ -1,4 +1,4 @@
-body{background: #ededed}
+body{background: #ededed;}
 header{position: fixed;width: 100%;height: 108px;background: url(../img/pixel.png);color: #fff;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;z-index: 2}
 header.sticky {height: 54px;text-align: left;}
 header.sticky a#logo img{height: 40px;}
@@ -31,6 +31,16 @@ h2{margin-top: 20px}
 #menumovil li{text-align: center;}
 #menumovil li a{color: #fff;}
 #menumovil{display: none}
+#menufooter{position: fixed; bottom: 0; background: #242731; height: 70px; width: 100%; padding: 10px 0; z-index: 3; opacity: 0.7}
+#menufooter ul li{float: left; width: 14%}
+#menufooter ul li a:hover{opacity: 0.7}
+#menufooter ul li a{display: block; width: 100%; color: #fff;font-size: 12px;line-height: normal;}
+#menufooter ul li a img{display: block; margin: 0 auto; width: 50px}
+.titulo{    position: absolute;
+    top: 40%;
+    color: #fff;
+    right: 20%;}
+.f24{    font-size: 24px;}
 @media (min-width: 300px) {
 	.txtform{width: 100%; margin-right: 0}
 	#menu{display: none}
@@ -38,7 +48,9 @@ h2{margin-top: 20px}
 	header{height: 54px; background: #242731; width: 100%}
 	header a#logo img {height: 40px;}
 	.parallax {min-height: 200px; background-attachment: scroll;}
-
+	#menufooter{height: 40px}
+	#menufooter ul li a p{display: none}
+	body{padding-bottom: 60px}
 }
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -48,6 +60,9 @@ h2{margin-top: 20px}
 	header{height: 54px; background: #242731; width: 100%}
 	header a#logo img {height: 40px;}
 	.parallax {min-height: 200px; background-attachment: fixed}
+	#menufooter{height: 40px}
+	#menufooter ul li a p{display: none}
+	body{padding-bottom: 60px}
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -58,6 +73,9 @@ h2{margin-top: 20px}
 	header{height: 54px; background: #242731}
 	header a#logo img {height: 40px;}
 	.parallax {min-height: 200px; background-attachment: fixed}
+	#menufooter{height: 40px}
+	#menufooter ul li a p{display: none}
+	body{padding-bottom: 60px}
 }
 
 /* Larger than tablet */
@@ -68,6 +86,9 @@ h2{margin-top: 20px}
 	header{height: 108px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 300px; background-attachment: fixed}
+	#menufooter{height: 40px}
+	#menufooter ul li a p{display: none}
+	body{padding-bottom: 60px}
 }
 
 /* Larger than desktop */
@@ -77,6 +98,9 @@ h2{margin-top: 20px}
 	header{height: 108px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 500px; background-attachment: fixed}
+	#menufooter{height: 70px}
+	#menufooter ul li a p{display: block;}
+	body{padding-bottom: 90px}
 }
 
 /* Larger than Desktop HD */
@@ -86,6 +110,9 @@ h2{margin-top: 20px}
 	header{height: 108px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 500px; background-attachment: fixed}
+	#menufooter{height: 70px}
+	#menufooter ul li a p{display: block;}
+	body{padding-bottom: 90px}
 }
 
 
