@@ -1,5 +1,5 @@
 body{background: #ededed;}
-header{position: fixed;width: 100%;height: 108px;background: url(../img/pixel.png);color: #fff;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;z-index: 2}
+header{position: fixed;width: 100%;height: 99px;background: url(../img/pixel.png);color: #fff;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;z-index: 2}
 header.sticky {height: 54px;text-align: left;}
 header.sticky a#logo img{height: 40px;}
 #menu {list-style: none;float: right;margin-top: 43px;}
@@ -89,7 +89,7 @@ h2{margin-top: 20px}
 	.metodo{font-size: 12px}
 	#menu{display: block}
 	#triggermenu{display: none}
-	header{height: 108px;background: url(../img/pixel.png);}
+	header{height: 99px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 300px; background-attachment: fixed}
 	#menufooter{height: 40px}
@@ -101,7 +101,7 @@ h2{margin-top: 20px}
 @media (min-width: 1000px) {
 	#menu{display: block}
 	#triggermenu{display: none}
-	header{height: 108px;background: url(../img/pixel.png);}
+	header{height: 99px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 500px; background-attachment: fixed}
 	#menufooter{height: 70px}
@@ -113,7 +113,7 @@ h2{margin-top: 20px}
 @media (min-width: 1200px) {
 	#menu{display: block}
 	#triggermenu{display: none}
-	header{height: 108px;background: url(../img/pixel.png);}
+	header{height: 99px;background: url(../img/pixel.png);}
 	header a#logo img {height: auto;}
 	.parallax {min-height: 500px; background-attachment: fixed}
 	#menufooter{height: 70px}
