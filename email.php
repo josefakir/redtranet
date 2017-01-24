@@ -45,7 +45,8 @@ $mail->Password = '\@D7ctdg.jQk#NjF';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 $mail->setFrom('contacto@redtranet.com.mx', 'Contacto Redtranet');
-$mail->addAddress('contacto@redtranet.com.mx', 'Pepe Becerra');
+$mail->addAddress('jbecerraromero@gmail.com', 'Pepe Becerra');
+//$mail->addAddress('contacto@redtranet.com.mx', 'Contacto REdtranet');
 $mail->isHTML(true);                                  // Set email format to HTML
 $mail->Subject = 'Contacto desde redtranet.com.mx';
 $mail->Body    = $html;
