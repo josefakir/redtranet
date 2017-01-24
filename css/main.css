@@ -4,7 +4,7 @@ header.sticky {height: 54px;text-align: left;}
 header.sticky a#logo img{height: 40px;}
 #menu {list-style: none;float: right;margin-top: 43px;}
 #menu li{float: left; margin-right: 15px}
-#menu li a{color: #fff;}
+#menu li a{color: #fff;font-size: 13px;}
 #logo{float: left;margin-top: -0;}
 header.sticky #menu{margin-top: 13px;}
 header.sticky #menu li a{color: #000}
