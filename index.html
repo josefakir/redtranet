@@ -37,6 +37,7 @@
 	<script src="js/owlcarousel/owl.carousel.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -133,33 +134,37 @@
 				<p class="tac">Contáctenos y solicite un precio especial para servidores VPS o Dedicados.</p>
 				<img src="img/costo.png" alt="" class="u-max-full-width centrar">
 				<h2 class="tac">Método de servicio:</h2>
-				<p class="tac">Ofrecemos un método de servicio mediante procedimientos determinados para la óptima integración de sus servicios , partiendo de los recursos clave para inicio de su proyecto hasta convertirnos su aliado estratégico.</p>
+				<p class="tac">Ofrecemos una metodología de aprovisionamiento de infraestructura para la óptima integración de sus servicios , partiendo de los recursos clave desde el inicio de su proyecto hasta convertirnos su aliado estratégico de confianza.</p>
 			</div>
 		</div>
 		<div class="container">
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/1.png" alt="" class="u-max-full-width centrar">
 				<p class="tac metodo">Requerimiento del cliente</p>
 			</div>
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/2.png" alt="" class="u-max-full-width centrar">
 				<p class="tac metodo">Staffing & Assessment</p>
 			</div>
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/3.png" alt="" class="u-max-full-width centrar">
 				<p class="tac metodo">Evaluación de recursos de infraestructura</p>
 			</div>
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/4.png" alt="" class="u-max-full-width centrar">
 				<p class="tac metodo">Aprovisionamiento de infraestructura</p>
 			</div>
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/5.png" alt="" class="u-max-full-width centrar">
-				<p class="tac metodo">xxxx</p>
+				<p class="tac metodo">Aprovisionamiento de Software Base</p>
 			</div>
-			<div class="two columns">
+			<div class="siete">
 				<img src="img/6.png" alt="" class="u-max-full-width centrar">
-				<p class="tac metodo">xxxx</p>
+				<p class="tac metodo">Pre-Producción & Análisis</p>
+			</div>
+			<div class="siete">
+				<img src="img/7.png" alt="" class="u-max-full-width centrar">
+				<p class="tac metodo">Liberación a Producción</p>
 			</div>
 		</div>
 	</div>
@@ -203,18 +208,18 @@
 				<p>
 					Tel. 6812-7065 <br>
 					<a href="">contacto@redtranet.com.mx</a><br>
-					Calle Manuel Calero #9 <br>
+					<!--Calle Manuel Calero #9 <br>
 					Esquina Ignacio Zaragoza, <br>
-					C.P. 09510 Del. Iztapalapa D.F. 
+					C.P. 09510 Del. Iztapalapa D.F. -->
 				</p>
 			</div>
 			<div class="one-half column">
-				<form action="">
+				<form action="email.php" id="form">
 					<div class="row">
-						<input type="text" class="txtform" placeholder="Nombre">
-						<input type="text" class="txtform" placeholder="Teléfono">
-						<input type="text" class="txtform" placeholder="Email">
-						<input type="text" class="txtform" placeholder="Mensaje">
+						<input type="text" class="txtform" placeholder="Nombre" name="nombre">
+						<input type="text" class="txtform" placeholder="Teléfono" name="telefono">
+						<input type="text" class="txtform" placeholder="Email" name="email">
+						<input type="text" class="txtform" placeholder="Mensaje" name="mensaje">
 						<input type="submit" value="Enviar">
 					</div>
 				</form>
@@ -231,6 +236,17 @@
 			<li><a href="servicios.html#s_voipmobile"><img src="img/ico3.png" alt=""><p class="tac">VOIP MOBILE</p></a></li>
 			<li><a href="servicios.html#s_callcenter"><img src="img/ico2.png" alt=""><p class="tac">CALL CENTER</p></a></li>
 		</ul>
+	</div>
+	<div id="overlay">
+		<div class="mensaje">
+			<h3 class="tac">¡Gracias!</h3>
+			<p class="tac">Recibimos tu mensaje correctamente, en breve nos pondremos en contacto.</p>
+			<button id="cerrarmodal">Cerrar</button>
+		</div>
+		<div class="mensajecargando">
+			<img src="img/gears.svg" alt="">
+			<p class="tac">Espere un momento por favor.</p>
+		</div>
 	</div>
 </body>
 </html>

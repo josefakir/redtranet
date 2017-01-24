@@ -18,16 +18,7 @@ ul{list-style: none !important}
 #listaservicios img{height: 30px; margin-top: 10px; margin-right: 10px}
 #listaservicios p{width: 100%; margin-bottom: 5px}
 #listaservicios h3{margin-bottom: 5px}
-/*.parallax {min-height: 500px; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
-#p1{ background-image: url("../img/p1.jpg");}
-#p2{ background-image: url("../img/p2.jpg");}
-#p3{ background-image: url("../img/p3.jpg");}
-#p4{ background-image: url("../img/p4.jpg");}
-#p5{ background-image: url("../img/p5.jpg");}
-#p6{ background-image: url("../img/p6.jpg");}
-#p7{ background-image: url("../img/p7.jpg");}*/
-.parallax{min-height: 400px;
-    background: transparent;}
+.parallax{min-height: 400px;background: transparent;}
 .tac{text-align: center; width: 100%}
 h2{margin-top: 20px}
 .centrar{margin: 0 auto; display: block;}
@@ -47,6 +38,14 @@ h2{margin-top: 20px}
 .srvc{float: left;width: 100%;list-style: outside !important;}
 .w100{width: 100%}
 .pt40{padding: 40px 0}
+.siete{width: 14%; float: left;}
+.metodo{margin-top: 10px}
+#overlay{width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: #fff;z-index: 10;opacity: 0.9;display: none}
+.mensaje{width: 300px;height: 250px;position: absolute;top: 50%;left: 50%;margin-top: -150px;margin-left: -125px; display: none}
+.mensajecargando{width: 300px;height: 250px;position: absolute;top: 50%;left: 50%;margin-top: -150px;margin-left: -125px; display: block;}
+#cerrarmodal{margin: 0 auto;display: block;}
+.mensajecargando img {display: block;margin: 0 auto;}
+.error{color: red}
 @media (min-width: 300px) {
 	.txtform{width: 100%; margin-right: 0}
 	#menu{display: none}
@@ -57,6 +56,7 @@ h2{margin-top: 20px}
 	#menufooter{height: 40px}
 	#menufooter ul li a p{display: none}
 	body{padding-bottom: 60px}
+	.siete{width: 100%; float: left;}
 }
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -69,6 +69,7 @@ h2{margin-top: 20px}
 	#menufooter{height: 40px}
 	#menufooter ul li a p{display: none}
 	body{padding-bottom: 60px}
+	.siete{width: 100%; float: left;}
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -82,6 +83,7 @@ h2{margin-top: 20px}
 	#menufooter{height: 40px}
 	#menufooter ul li a p{display: none}
 	body{padding-bottom: 60px}
+	.siete{width: 100%; float: left;}
 }
 
 /* Larger than tablet */
@@ -95,6 +97,7 @@ h2{margin-top: 20px}
 	#menufooter{height: 40px}
 	#menufooter ul li a p{display: none}
 	body{padding-bottom: 60px}
+	.siete{width: 100%; float: left;}
 }
 
 /* Larger than desktop */
@@ -107,6 +110,7 @@ h2{margin-top: 20px}
 	#menufooter{height: 70px}
 	#menufooter ul li a p{display: block;}
 	body{padding-bottom: 90px}
+	.siete{width: 14%; float: left;}
 }
 
 /* Larger than Desktop HD */
@@ -119,4 +123,5 @@ h2{margin-top: 20px}
 	#menufooter{height: 70px}
 	#menufooter ul li a p{display: block;}
 	body{padding-bottom: 90px}
+	.siete{width: 14%; float: left;}
 }

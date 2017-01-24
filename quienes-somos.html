@@ -37,6 +37,7 @@
 	<script src="js/owlcarousel/owl.carousel.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -104,18 +105,18 @@
 				<p>
 					Tel. 6812-7065 <br>
 					<a href="">contacto@redtranet.com.mx</a><br>
-					Calle Manuel Calero #9 <br>
+					<!--Calle Manuel Calero #9 <br>
 					Esquina Ignacio Zaragoza, <br>
-					C.P. 09510 Del. Iztapalapa D.F. 
+					C.P. 09510 Del. Iztapalapa D.F. -->
 				</p>
 			</div>
 			<div class="one-half column">
-				<form action="">
+				<form action="email.php" id="form">
 					<div class="row">
-						<input type="text" class="txtform" placeholder="Nombre">
-						<input type="text" class="txtform" placeholder="Teléfono">
-						<input type="text" class="txtform" placeholder="Email">
-						<input type="text" class="txtform" placeholder="Mensaje">
+						<input type="text" class="txtform" placeholder="Nombre" name="nombre">
+						<input type="text" class="txtform" placeholder="Teléfono" name="telefono">
+						<input type="text" class="txtform" placeholder="Email" name="email">
+						<input type="text" class="txtform" placeholder="Mensaje" name="mensaje">
 						<input type="submit" value="Enviar">
 					</div>
 				</form>
@@ -138,6 +139,17 @@
 			<li><a href="servicios.html#s_voipmobile"><img src="img/ico3.png" alt=""><p class="tac">VOIP MOBILE</p></a></li>
 			<li><a href="servicios.html#s_callcenter"><img src="img/ico2.png" alt=""><p class="tac">CALL CENTER</p></a></li>
 		</ul>
+	</div>
+	<div id="overlay">
+		<div class="mensaje">
+			<h3 class="tac">¡Gracias!</h3>
+			<p class="tac">Recibimos tu mensaje correctamente, en breve nos pondremos en contacto.</p>
+			<button id="cerrarmodal">Cerrar</button>
+		</div>
+		<div class="mensajecargando">
+			<img src="img/gears.svg" alt="">
+			<p class="tac">Espere un momento por favor.</p>
+		</div>
 	</div>
 </body>
 </html>
