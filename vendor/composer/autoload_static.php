@@ -4,23 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitef01e4d87aef5157b6d667d28652af85
+class ComposerStaticInit11cbe476239cd6843dec8858e0c84201
 {
-    public static $classMap = array (
-        'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
-        'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
-        'PHPMailerOAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauth.php',
-        'PHPMailerOAuthGoogle' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
-        'POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.pop3.php',
-        'SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.smtp.php',
-        'ntlm_sasl_client_class' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
-        'phpmailerException' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
+    public static $files = array (
+        '3f8bdd3b35094c73a26f0106e3c0f8b2' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
+        '9dda55337a76a24e949fbcc5d905a2c7' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/helpers/mail/Mail.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'SendGrid\\' => 9,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'SendGrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitef01e4d87aef5157b6d667d28652af85::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit11cbe476239cd6843dec8858e0c84201::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit11cbe476239cd6843dec8858e0c84201::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

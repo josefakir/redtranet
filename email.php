@@ -35,26 +35,12 @@ $html = '
 </html>
 ';
 include("vendor/autoload.php");
-$mail = new PHPMailer;
-$mail->CharSet = 'UTF-8';
-$mail->isSMTP();
-$mail->Host = 'smtp.sendgrid.net';
-$mail->SMTPAuth = true;
-$mail->Username = 'antonio.becerra@grupomedios.com';
-$mail->Password = '\@D7ctdg.jQk#NjF';
-$mail->SMTPSecure = 'tls';
-$mail->Port = 587;
-$mail->setFrom('contacto@redtranet.com.mx', 'Contacto Redtranet');
-$mail->addAddress('jbecerraromero@gmail.com', 'Pepe Becerra');
-$mail->addAddress('misael.azamar.ramos@gmail.com', 'Misael Azamar');
-$mail->addAddress('contacto@redtranet.com.mx', 'Contacto REdtranet');
-$mail->isHTML(true);                                  // Set email format to HTML
-$mail->Subject = 'Contacto desde redtranet.com.mx';
-$mail->Body    = $html;
-if(!$mail->send()) {
-    echo 'error';
-   echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'success';
-}
+$from = new SendGrid\Email("Contacto Redtranet", "contacto@redtranet.com.mx");
+$subject = 'Contacto desde redtranet.com.mx';
+$to = new SendGrid\Email("Misael Azamar ", "misael.azamar.ramos@gmail.com");
+$content = new SendGrid\Content("text/html", $html);
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+$apiKey = base64_decode("U0cueExRTl83Y3pRVEc4LTRqdEhIellZZy5qVjNSQUVCZ2pGNzQ4T2ZuTmkwNXNwSXlKV1NhOVJHbU83ZkZHM1NqeHVB");
+$sg = new \SendGrid($apiKey);
+$response = $sg->client->mail()->send()->post($mail);
 ?>
